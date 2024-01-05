@@ -37,10 +37,6 @@ function Team({ comp }) {
                     invalidateOnRefresh: true,
                     refreshPriority: 1,
                     markers: true,
-                    onEnter: () => {
-                        tl.progress(0)
-                        tl.play()
-                    }
                 },
             }).from('.col-box', {
                 x: 1500,
@@ -55,6 +51,10 @@ function Team({ comp }) {
                     start: "top top",
                     end: "bottom bottom",
                     scrub: 1,
+                },
+                onEnter: () => {
+                    tl.progress(0)
+                    tl.play()
                 }
             })
 

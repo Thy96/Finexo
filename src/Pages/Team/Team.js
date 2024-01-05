@@ -26,7 +26,7 @@ function Team({ comp }) {
                     scrub: 1,
                 },
 
-            }).to('.team_section', {
+            }).to('.horizontal-scroll_section-height', {
                 scrollTrigger: {
                     trigger: ".horizontal-scroll_section-height",
                     pin: true,
@@ -45,8 +45,8 @@ function Team({ comp }) {
                 },
                 scrollTrigger: {
                     trigger: '.team_section',
-                    start: "top top", // when the top of the trigger hits the top of the viewport
-                    end: "bottom bottom", // end after scrolling 500px beyond the start
+                    start: "top top",
+                    end: "bottom bottom",
                     scrub: 1,
                 }
             })

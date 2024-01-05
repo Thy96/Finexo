@@ -31,7 +31,7 @@ function Team({ comp }) {
                     trigger: ".horizontal-scroll_section-height",
                     pin: true,
                     start: "top top", // when the top of the trigger hits the top of the viewport
-                    end: "+=3500", // end after scrolling 500px beyond the start
+                    end: "+=8500", // end after scrolling 500px beyond the start
                     scrub: 1,
                 },
             }).from('.col-box', {

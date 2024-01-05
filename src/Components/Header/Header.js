@@ -1,27 +1,16 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faSearch } from '@fortawesome/free-solid-svg-icons'
 
-import { NavLink, useLocation } from 'react-router-dom'
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 import images from "../../assets/images";
+import SliderMainVisual from '../SliderMainVisual/SliderMainVisual';
+
 function Header(props) {
-    const slideViewTop = {
-        dots: true,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-    };
 
     const location = useLocation();
     // console.log(location.pathname);
@@ -38,7 +27,7 @@ function Header(props) {
                 <header className="header_section">
                     <div className="container-fluid">
                         <Navbar collapseOnSelect expand="lg" data-bs-theme="dark">
-                            <Navbar.Brand href="#home"><span>Finexo</span></Navbar.Brand>
+                            <Link to="/" className='navbar-brand'><span>Finexo</span></Link>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="me-auto"></Nav>
@@ -94,98 +83,7 @@ function Header(props) {
                 {/* end header section */}
 
                 {/* slider section */}
-                {location.pathname === '/' ? <section className="slider_section">
-                    <Slider {...slideViewTop}>
-                        <Container>
-                            <div className="row">
-                                <div className="col-md-6">
-                                    <div className="detail-box">
-                                        <h1>
-                                            Crypto <br />
-                                            Currency
-                                        </h1>
-                                        <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                                        </p>
-                                        <div className="btn-box">
-                                            <a href="#home" className="btn1">
-                                                Read More
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="img-box">
-                                        <img
-                                            className="d-block w-100"
-                                            src={images.slider_img}
-                                            alt="First slide"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </Container>
-                        <Container>
-                            <div className="row">
-                                <div className="col-md-6">
-                                    <div className="detail-box">
-                                        <h1>
-                                            Crypto <br />
-                                            Currency
-                                        </h1>
-                                        <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                                        </p>
-                                        <div className="btn-box">
-                                            <a href="#home" className="btn1">
-                                                Read More
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="img-box">
-                                        <img
-                                            className="d-block w-100"
-                                            src={images.slider_img}
-                                            alt="First slide"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </Container>
-                        <Container>
-                            <div className="row">
-                                <div className="col-md-6">
-                                    <div className="detail-box">
-                                        <h1>
-                                            Crypto <br />
-                                            Currency
-                                        </h1>
-                                        <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                                        </p>
-                                        <div className="btn-box">
-                                            <a href="#home" className="btn1">
-                                                Read More
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="img-box">
-                                        <img
-                                            className="d-block w-100"
-                                            src={images.slider_img}
-                                            alt="First slide"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </Container>
-                    </Slider>
-                </section> : ''}
-
+                {location.pathname === '/' ? <SliderMainVisual></SliderMainVisual> : ''}
                 {/* end slider section */}
             </div>
 

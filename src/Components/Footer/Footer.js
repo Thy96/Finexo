@@ -2,6 +2,9 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faMapMarkerAlt, faPhoneVolume, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom';
+
+
 
 function Footer(props) {
     return (
@@ -16,19 +19,19 @@ function Footer(props) {
                                     Address
                                 </h4>
                                 <div className="contact_link_box">
-                                    <a href="#home">
+                                    <a href="https://www.google.com/maps" target='_blank' rel="noreferrer">
                                         <FontAwesomeIcon icon={faMapMarkerAlt}></FontAwesomeIcon>
                                         <span>
                                             Location
                                         </span>
                                     </a>
-                                    <a href="#home">
+                                    <a href="tel:1234567890">
                                         <FontAwesomeIcon icon={faPhoneVolume}></FontAwesomeIcon>
                                         <span>
                                             Call +01 1234567890
                                         </span>
                                     </a>
-                                    <a href="#home">
+                                    <a href="mailto:demo@gmail.com">
                                         <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
                                         <span>
                                             demo@gmail.com
@@ -37,16 +40,16 @@ function Footer(props) {
                                 </div>
                             </div>
                             <div className="info_social">
-                                <a href="#home">
+                                <a href="https://www.facebook.com/" target='_blank' rel="noreferrer">
                                     <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
                                 </a>
-                                <a href="#home">
+                                <a href="https://twitter.com/?lang=vi" target='_blank' rel="noreferrer">
                                     <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
                                 </a>
-                                <a href="#home">
+                                <a href="https://www.linkedin.com/" target='_blank' rel="noreferrer">
                                     <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
                                 </a>
-                                <a href="#home">
+                                <a href="https://www.instagram.com/" target='_blank' rel="noreferrer">
                                     <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
                                 </a>
                             </div>
@@ -67,21 +70,21 @@ function Footer(props) {
                                     Links
                                 </h4>
                                 <div className="info_links">
-                                    <a className="active" href="index.html">
+                                    <NavLink to="/">
                                         Home
-                                    </a>
-                                    <a className="" href="about.html">
+                                    </NavLink>
+                                    <NavLink to="/about">
                                         About
-                                    </a>
-                                    <a className="" href="service.html">
+                                    </NavLink>
+                                    <NavLink to="/services">
                                         Services
-                                    </a>
-                                    <a className="" href="why.html">
+                                    </NavLink>
+                                    <NavLink to="/why">
                                         Why Us
-                                    </a>
-                                    <a className="" href="team.html">
+                                    </NavLink>
+                                    <NavLink to="/team">
                                         Team
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>

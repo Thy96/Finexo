@@ -33,7 +33,7 @@ function Header(props) {
                                 <Nav className="me-auto"></Nav>
                                 <Nav>
                                     <NavLink
-                                        to="/finexo/"
+                                        to="/finexo"
                                         className={({ isActive }) => isActive ? "active" : ""
                                         }
                                     >

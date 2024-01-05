@@ -23,8 +23,7 @@ function Team({ comp }) {
                     trigger: ['.title-6'],
                     start: 'bottom bottom',
                     end: 'top top',
-                    scrub: 1,
-                    // markers: true
+                    scrub: 1
                 },
 
             }).to('.horizontal-scroll_section-height', {
@@ -32,14 +31,11 @@ function Team({ comp }) {
                     trigger: ".horizontal-scroll_section-height",
                     pin: true,
                     start: "top top", // when the top of the trigger hits the top of the viewport
-                    end: "+=1200", // end after scrolling 500px beyond the start
+                    end: "+=3500", // end after scrolling 500px beyond the start
                     scrub: 1,
-                    invalidateOnRefresh: true,
-                    refreshPriority: 1,
-                    markers: true,
                 },
             }).from('.col-box', {
-                x: 1500,
+                x: 5500,
                 opacity: 0,
                 ease: "circ.out",
                 duration: 2.5,
@@ -51,10 +47,6 @@ function Team({ comp }) {
                     start: "top top",
                     end: "bottom bottom",
                     scrub: 1,
-                },
-                onEnter: () => {
-                    tl.progress(0)
-                    tl.play()
                 }
             })
 

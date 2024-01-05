@@ -35,7 +35,7 @@ function Team({ comp }) {
                     scrub: 1,
                 },
             }).from('.col-box', {
-                x: 5500,
+                x: 1500,
                 opacity: 0,
                 ease: "circ.out",
                 duration: 2.5,

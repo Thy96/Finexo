@@ -12,12 +12,12 @@ function Main(props) {
     return (
         <>
             <Routes>
-                <Route path='/' element={<Home></Home>}></Route>
-                <Route path='/about' element={<About></About>}></Route>
-                <Route path='/services' element={<Services></Services>}></Route>
-                <Route path='/why' element={<Why></Why>}></Route>
-                <Route path='/team' element={<Team></Team>}></Route>
-                <Route path='/login' element={<Login></Login>}></Route>
+                <Route path='/finexo' element={<Home></Home>}></Route>
+                <Route path='/finexo/about' element={<About></About>}></Route>
+                <Route path='/finexo/services' element={<Services></Services>}></Route>
+                <Route path='/finexo/why' element={<Why></Why>}></Route>
+                <Route path='/finexo/team' element={<Team></Team>}></Route>
+                <Route path='/finexo/login' element={<Login></Login>}></Route>
             </Routes>
         </>
     );

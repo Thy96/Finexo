@@ -26,7 +26,7 @@ function Team({ comp }) {
                     scrub: 1,
                 },
 
-            }).to('.horizontal-scroll_section-height', {
+            }).to('.team_section', {
                 scrollTrigger: {
                     trigger: ".horizontal-scroll_section-height",
                     pin: true,

@@ -24,7 +24,7 @@ function Team({ comp }) {
                     start: 'bottom bottom',
                     end: 'top top',
                     scrub: 1,
-                    markers: true
+                    // markers: true
                 },
 
             }).to('.horizontal-scroll_section-height', {

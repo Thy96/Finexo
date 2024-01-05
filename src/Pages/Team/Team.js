@@ -38,6 +38,7 @@ function Team({ comp }) {
                     refreshPriority: 1,
                     markers: true,
                     onEnter: () => {
+                        tl.progress(0)
                         tl.play()
                     }
                 },

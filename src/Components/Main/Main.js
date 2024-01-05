@@ -12,7 +12,7 @@ function Main(props) {
     return (
         <>
             <Routes>
-                <Route path='/finexo' element={<Home></Home>}></Route>
+                <Route path='/finexo/' element={<Home></Home>}></Route>
                 <Route path='/finexo/about' element={<About></About>}></Route>
                 <Route path='/finexo/services' element={<Services></Services>}></Route>
                 <Route path='/finexo/why' element={<Why></Why>}></Route>

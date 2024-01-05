@@ -24,7 +24,7 @@ function Login(props) {
 
                                     <p>the page you are looking for not avaible!</p>
 
-                                    <NavLink to="/finexo" className={cx('link_404')}>Go to Home</NavLink>
+                                    <NavLink to="/finexo/" className={cx('link_404')}>Go to Home</NavLink>
                                 </div>
                             </div>
                         </div>

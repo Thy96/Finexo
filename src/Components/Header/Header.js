@@ -16,7 +16,7 @@ function Header(props) {
     // console.log(location.pathname);
     return (
         <>
-            <div className={location.pathname === '/finexo' ? "hero_area" : 'sub_page hero_area'}>
+            <div className={location.pathname === '/finexo/' ? "hero_area" : 'sub_page hero_area'}>
                 <div className="hero_bg_box">
                     <div className="bg_img_box">
                         <img src={images.hero_bg} alt="" />
@@ -27,13 +27,13 @@ function Header(props) {
                 <header className="header_section">
                     <div className="container-fluid">
                         <Navbar collapseOnSelect expand="lg" data-bs-theme="dark">
-                            <Link to="/finexo" className='navbar-brand'><span>Finexo</span></Link>
+                            <Link to="/finexo/" className='navbar-brand'><span>Finexo</span></Link>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="me-auto"></Nav>
                                 <Nav>
                                     <NavLink
-                                        to="/finexo"
+                                        to="/finexo/"
                                         className={({ isActive }) => isActive ? "active" : ""
                                         }
                                     >
@@ -83,7 +83,7 @@ function Header(props) {
                 {/* end header section */}
 
                 {/* slider section */}
-                {location.pathname === '/finexo' ? <SliderMainVisual></SliderMainVisual> : ''}
+                {location.pathname === '/finexo/' ? <SliderMainVisual></SliderMainVisual> : ''}
                 {/* end slider section */}
             </div>
 

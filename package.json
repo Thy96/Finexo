@@ -2,7 +2,7 @@
   "name": "finexo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thy96.github.io/finexo",
+  "homepage": "https://thy96.github.io/finexo/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",

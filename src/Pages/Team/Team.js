@@ -24,6 +24,7 @@ function Team({ comp }) {
                     start: 'bottom bottom',
                     end: 'top top',
                     scrub: 1,
+                    // markers: true
                 },
 
             }).to('.horizontal-scroll_section-height', {
@@ -31,8 +32,10 @@ function Team({ comp }) {
                     trigger: ".horizontal-scroll_section-height",
                     pin: true,
                     start: "top top", // when the top of the trigger hits the top of the viewport
-                    end: "+=3500", // end after scrolling 500px beyond the start
+                    end: "+=1200", // end after scrolling 500px beyond the start
                     scrub: 1,
+                    invalidateOnRefresh: true,
+                    refreshPriority: 1,
                     markers: true
                 },
             }).from('.col-box', {

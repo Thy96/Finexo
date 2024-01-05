@@ -83,7 +83,7 @@ function Services({ comp }) {
                                             The
                                             point of using
                                         </p>
-                                        <Link to="/finexo/services">
+                                        <Link to="/finexo/services/">
                                             Read More
                                         </Link>
                                     </div>
@@ -103,7 +103,7 @@ function Services({ comp }) {
                                             The
                                             point of using
                                         </p>
-                                        <Link to="/finexo/services">
+                                        <Link to="/finexo/services/">
                                             Read More
                                         </Link>
                                     </div>
@@ -123,7 +123,7 @@ function Services({ comp }) {
                                             The
                                             point of using
                                         </p>
-                                        <Link to="/finexo/services">
+                                        <Link to="/finexo/services/">
                                             Read More
                                         </Link>
                                     </div>
@@ -131,7 +131,7 @@ function Services({ comp }) {
                             </div>
                         </div>
                         <div className="btn-box btn-box1">
-                            <Link to="/finexo/services">
+                            <Link to="/finexo/services/">
                                 View All
                             </Link>
                         </div>

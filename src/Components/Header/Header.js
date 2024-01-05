@@ -13,7 +13,6 @@ import SliderMainVisual from '../SliderMainVisual/SliderMainVisual';
 function Header(props) {
 
     const location = useLocation();
-    // console.log(location.pathname);
     return (
         <>
             <div className={location.pathname === '/finexo/' ? "hero_area" : 'sub_page hero_area'}>
@@ -33,42 +32,42 @@ function Header(props) {
                                 <Nav className="me-auto"></Nav>
                                 <Nav>
                                     <NavLink
-                                        to="/finexo/"
+                                        to="/finexo/" end
                                         className={({ isActive }) => isActive ? "active" : ""
                                         }
                                     >
                                         <span className='nav-link'>Home</span>
                                     </NavLink>
                                     <NavLink
-                                        to="/finexo/about"
+                                        to="/finexo/about/"
                                         className={({ isActive }) => isActive ? "active" : ""
                                         }
                                     >
                                         <span className='nav-link'>About</span>
                                     </NavLink>
                                     <NavLink
-                                        to="/finexo/services"
+                                        to="/finexo/services/"
                                         className={({ isActive }) => isActive ? "active" : ""
                                         }
                                     >
                                         <span className='nav-link'>Services</span>
                                     </NavLink>
                                     <NavLink
-                                        to="/finexo/why"
+                                        to="/finexo/why/"
                                         className={({ isActive }) => isActive ? "active" : ""
                                         }
                                     >
                                         <span className='nav-link'>Why Us</span>
                                     </NavLink>
                                     <NavLink
-                                        to="/finexo/team"
+                                        to="/finexo/team/"
                                         className={({ isActive }) => isActive ? "active" : ""
                                         }
                                     >
                                         <span className='nav-link'>Team</span>
                                     </NavLink>
                                     <NavLink
-                                        to="/finexo/login"
+                                        to="/finexo/login/"
                                         className={({ isActive }) => isActive ? "active" : ""
                                         }
                                     >

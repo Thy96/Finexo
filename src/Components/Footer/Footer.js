@@ -4,8 +4,6 @@ import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/
 import { faMapMarkerAlt, faPhoneVolume, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom';
 
-
-
 function Footer(props) {
     return (
         <>
@@ -73,16 +71,16 @@ function Footer(props) {
                                     <NavLink to="/finexo/">
                                         Home
                                     </NavLink>
-                                    <NavLink to="/finexo/about">
+                                    <NavLink to="/finexo/about/">
                                         About
                                     </NavLink>
-                                    <NavLink to="/finexo/services">
+                                    <NavLink to="/finexo/services/">
                                         Services
                                     </NavLink>
-                                    <NavLink to="/finexo/why">
+                                    <NavLink to="/finexo/why/">
                                         Why Us
                                     </NavLink>
-                                    <NavLink to="/finexo/team">
+                                    <NavLink to="/finexo/team/">
                                         Team
                                     </NavLink>
                                 </div>

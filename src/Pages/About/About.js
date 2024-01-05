@@ -79,7 +79,7 @@ function About({ comp }) {
                                     Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem, possimus at iste corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam ab omnis quasi expedita.
                                 </p>
                                 <div className='word-animation-left'>
-                                    <Link to="/finexo/about">
+                                    <Link to="/finexo/about/">
                                         Read More
                                     </Link>
                                 </div>

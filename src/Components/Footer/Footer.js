@@ -70,19 +70,19 @@ function Footer(props) {
                                     Links
                                 </h4>
                                 <div className="info_links">
-                                    <NavLink to="/">
+                                    <NavLink to="/finexo/">
                                         Home
                                     </NavLink>
-                                    <NavLink to="/about">
+                                    <NavLink to="/finexo/about">
                                         About
                                     </NavLink>
-                                    <NavLink to="/services">
+                                    <NavLink to="/finexo/services">
                                         Services
                                     </NavLink>
-                                    <NavLink to="/why">
+                                    <NavLink to="/finexo/why">
                                         Why Us
                                     </NavLink>
-                                    <NavLink to="/team">
+                                    <NavLink to="/finexo/team">
                                         Team
                                     </NavLink>
                                 </div>

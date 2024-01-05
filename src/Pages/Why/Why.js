@@ -169,7 +169,7 @@ function Why({ comp }) {
                         </div>
                     </div>
                     <div className="btn-box btn-box2">
-                        <Link to="/why">
+                        <Link to="/finexo/why">
                             Read More
                         </Link>
                     </div>

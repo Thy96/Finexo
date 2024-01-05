@@ -36,7 +36,10 @@ function Team({ comp }) {
                     scrub: 1,
                     invalidateOnRefresh: true,
                     refreshPriority: 1,
-                    markers: true
+                    markers: true,
+                    onEnter: () => {
+                        tl.play()
+                    }
                 },
             }).from('.col-box', {
                 x: 1500,
@@ -53,6 +56,7 @@ function Team({ comp }) {
                     scrub: 1,
                 }
             })
+
 
         },
 

@@ -25,7 +25,7 @@ function Team({ comp }) {
                     scrub: 1
                 },
 
-            }).from('.row .col-box', {
+            }).from('.container-fluid .team_container .row .col-box', {
                 x: 1500,
                 opacity: 0,
                 ease: "circ.out",
@@ -38,8 +38,7 @@ function Team({ comp }) {
                     pin: '.horizontal-scroll_section-height',
                     start: "top top", // when the top of the trigger hits the top of the viewport
                     end: "+=3500", // end after scrolling 500px beyond the start
-                    scrub: 2,
-                    markers: true
+                    scrub: 2
                 }
             })
         },
@@ -48,15 +47,15 @@ function Team({ comp }) {
     );
     return (
         <section className="team_section layout_padding" ref={comp}>
-            <div className="container-fluid">
-                <div className="heading_container heading_center">
-                    <h2 className="title-6">
-                        Our <span> Team</span>
-                    </h2>
-                </div>
+            <div className='horizontal-scroll_section-height'>
+                <div className="container-fluid">
+                    <div className="heading_container heading_center">
+                        <h2 className="title-6">
+                            Our <span> Team</span>
+                        </h2>
+                    </div>
 
-                <div className="team_container">
-                    <div className='horizontal-scroll_section-height'>
+                    <div className="team_container">
                         <div className="row">
                             <div className="col-lg-3 col-sm-6 col-box">
                                 <div className="box ">

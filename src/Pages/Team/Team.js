@@ -33,7 +33,7 @@ function Team({ comp }) {
                     scrub: 1
                 },
 
-            }).to('.team_section', {
+            }).to('.container-fluid', {
                 scrollTrigger: {
                     trigger: ".horizontal-scroll_section-height",
                     pin: '.horizontal-scroll_section-height',

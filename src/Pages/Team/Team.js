@@ -34,16 +34,16 @@ function Team({ comp }) {
                 },
 
             })
-            tl.to('.team_container', {
-                scrollTrigger: {
-                    trigger: ".horizontal-scroll_section-height",
-                    pin: true,
-                    start: "top top", // when the top of the trigger hits the top of the viewport
-                    end: "+=3500", // end after scrolling 500px beyond the start
-                    scrub: 2,
-                    markers: true
-                },
-            })
+            // tl.to('.team_container', {
+            //     scrollTrigger: {
+            //         trigger: ".horizontal-scroll_section-height",
+            //         pin: true,
+            //         start: "top top", // when the top of the trigger hits the top of the viewport
+            //         end: "+=3500", // end after scrolling 500px beyond the start
+            //         scrub: 2,
+            //         markers: true
+            //     },
+            // })
             tl.from('.col-box', {
                 x: 1500,
                 opacity: 0,
@@ -53,10 +53,12 @@ function Team({ comp }) {
                     each: 1
                 },
                 scrollTrigger: {
-                    trigger: '.team_container',
-                    start: "top top",
-                    end: "bottom bottom",
-                    scrub: 1,
+                    trigger: ".horizontal-scroll_section-height",
+                    pin: '.horizontal-scroll_section-height',
+                    start: "top top", // when the top of the trigger hits the top of the viewport
+                    end: "+=3500", // end after scrolling 500px beyond the start
+                    scrub: 2,
+                    markers: true
                 }
             })
         },

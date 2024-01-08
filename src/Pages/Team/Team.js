@@ -25,7 +25,7 @@ function Team({ comp }) {
                     scrub: 1
                 },
 
-            }).from('.col-box', {
+            }).from('.row .col-box', {
                 x: 1500,
                 opacity: 0,
                 ease: "circ.out",
@@ -55,136 +55,139 @@ function Team({ comp }) {
                 </div>
 
                 <div className="team_container">
-                    <div className="row horizontal-scroll_section-height">
-                        <div className="col-lg-3 col-sm-6 col-box">
-                            <div className="box ">
-                                <div className="img-box">
-                                    <img src={images.team_1} className="img1" alt="" />
-                                </div>
-                                <div className="detail-box">
-                                    <h5>
-                                        Joseph Brown
-                                    </h5>
-                                    <p>
-                                        Marketing Head
-                                    </p>
-                                </div>
-                                <div className="social_box">
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-sm-6 col-box">
-                            <div className="box ">
-                                <div className="img-box">
-                                    <img src={images.team_2} className="img1" alt="" />
-                                </div>
-                                <div className="detail-box">
-                                    <h5>
-                                        Nancy White
-                                    </h5>
-                                    <p>
-                                        Marketing Head
-                                    </p>
-                                </div>
-                                <div className="social_box">
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
-                                    </a>
+                    <div className='horizontal-scroll_section-height'>
+                        <div className="row">
+                            <div className="col-lg-3 col-sm-6 col-box">
+                                <div className="box ">
+                                    <div className="img-box">
+                                        <img src={images.team_1} className="img1" alt="" />
+                                    </div>
+                                    <div className="detail-box">
+                                        <h5>
+                                            Joseph Brown
+                                        </h5>
+                                        <p>
+                                            Marketing Head
+                                        </p>
+                                    </div>
+                                    <div className="social_box">
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-3 col-sm-6 col-box">
-                            <div className="box ">
-                                <div className="img-box">
-                                    <img src={images.team_3} className="img1" alt="" />
-                                </div>
-                                <div className="detail-box">
-                                    <h5>
-                                        Earl Martinez
-                                    </h5>
-                                    <p>
-                                        Marketing Head
-                                    </p>
-                                </div>
-                                <div className="social_box">
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
-                                    </a>
+                            <div className="col-lg-3 col-sm-6 col-box">
+                                <div className="box ">
+                                    <div className="img-box">
+                                        <img src={images.team_2} className="img1" alt="" />
+                                    </div>
+                                    <div className="detail-box">
+                                        <h5>
+                                            Nancy White
+                                        </h5>
+                                        <p>
+                                            Marketing Head
+                                        </p>
+                                    </div>
+                                    <div className="social_box">
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-3 col-sm-6 col-box">
-                            <div className="box ">
-                                <div className="img-box">
-                                    <img src={images.team_4} className="img1" alt="" />
+                            <div className="col-lg-3 col-sm-6 col-box">
+                                <div className="box ">
+                                    <div className="img-box">
+                                        <img src={images.team_3} className="img1" alt="" />
+                                    </div>
+                                    <div className="detail-box">
+                                        <h5>
+                                            Earl Martinez
+                                        </h5>
+                                        <p>
+                                            Marketing Head
+                                        </p>
+                                    </div>
+                                    <div className="social_box">
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div className="detail-box">
-                                    <h5>
-                                        Josephine Allard
-                                    </h5>
-                                    <p>
-                                        Marketing Head
-                                    </p>
-                                </div>
-                                <div className="social_box">
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-                                    </a>
-                                    <a href="#home">
-                                        <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
-                                    </a>
+                            </div>
+                            <div className="col-lg-3 col-sm-6 col-box">
+                                <div className="box ">
+                                    <div className="img-box">
+                                        <img src={images.team_4} className="img1" alt="" />
+                                    </div>
+                                    <div className="detail-box">
+                                        <h5>
+                                            Josephine Allard
+                                        </h5>
+                                        <p>
+                                            Marketing Head
+                                        </p>
+                                    </div>
+                                    <div className="social_box">
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+                                        </a>
+                                        <a href="#home">
+                                            <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 

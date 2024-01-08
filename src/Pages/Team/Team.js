@@ -53,7 +53,7 @@ function Team({ comp }) {
                     each: 1
                 },
                 scrollTrigger: {
-                    trigger: '.team_section1',
+                    trigger: '.layout_padding',
                     start: "top top",
                     end: "bottom bottom",
                     scrub: 1,
@@ -64,7 +64,7 @@ function Team({ comp }) {
         { scope: comp }
     );
     return (
-        <section className="team_section team_section1 layout_padding" ref={comp}>
+        <section className="team_section layout_padding" ref={comp}>
             <div className='horizontal-scroll_section-height'>
                 <div className="container-fluid">
                     <div className="heading_container heading_center">

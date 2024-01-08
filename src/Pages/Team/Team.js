@@ -26,7 +26,7 @@ function Team({ comp }) {
                 },
 
             }).from('.col-box', {
-                x: 500,
+                x: 1500,
                 opacity: 0,
                 ease: "circ.out",
                 duration: 2.5,
@@ -37,7 +37,7 @@ function Team({ comp }) {
                     trigger: ".horizontal-scroll_section-height",
                     pin: '.horizontal-scroll_section-height',
                     start: "top top", // when the top of the trigger hits the top of the viewport
-                    end: "+=1000", // end after scrolling 500px beyond the start
+                    end: "+=3500", // end after scrolling 500px beyond the start
                     scrub: 2
                 }
             })

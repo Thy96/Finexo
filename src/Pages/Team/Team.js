@@ -34,7 +34,7 @@ function Team({ comp }) {
                 },
 
             })
-            tl.to('.container-fluid', {
+            tl.to('.team_container', {
                 scrollTrigger: {
                     trigger: ".horizontal-scroll_section-height",
                     pin: true,
@@ -53,7 +53,7 @@ function Team({ comp }) {
                     each: 1
                 },
                 scrollTrigger: {
-                    trigger: '.layout_padding',
+                    trigger: '.team_container',
                     start: "top top",
                     end: "bottom bottom",
                     scrub: 1,

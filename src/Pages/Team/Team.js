@@ -14,7 +14,6 @@ function Team({ comp }) {
     useGSAP(
         () => {
             const tl = gsap.timeline()
-            console.log('ok');
             tl.from([".title-6"], {
                 opacity: 0,
                 y: "+=50",
@@ -26,18 +25,7 @@ function Team({ comp }) {
                     scrub: 1
                 },
 
-            })
-            // tl.to('.team_container', {
-            //     scrollTrigger: {
-            //         trigger: ".horizontal-scroll_section-height",
-            //         pin: true,
-            //         start: "top top", // when the top of the trigger hits the top of the viewport
-            //         end: "+=3500", // end after scrolling 500px beyond the start
-            //         scrub: 2,
-            //         markers: true
-            //     },
-            // })
-            tl.from('.col-box', {
+            }).from('.col-box', {
                 x: 500,
                 opacity: 0,
                 ease: "circ.out",

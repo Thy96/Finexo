@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/finexo/static/css/main.fa8dca5c.css",
-    "main.js": "/finexo/static/js/main.0e050747.js",
+    "main.js": "/finexo/static/js/main.037ad724.js",
     "static/js/27.e5ac04ac.chunk.js": "/finexo/static/js/27.e5ac04ac.chunk.js",
     "static/media/about-img.png": "/finexo/static/media/about-img.ffc7e305fe684ff9bf92.png",
     "static/media/slider-img.png": "/finexo/static/media/slider-img.778d023914e6d5992ec9.png",
@@ -25,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.fa8dca5c.css",
-    "static/js/main.0e050747.js"
+    "static/js/main.037ad724.js"
   ]
 }

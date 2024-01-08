@@ -14,7 +14,14 @@ function Team({ comp }) {
     useGSAP(
         () => {
             const tl = gsap.timeline()
-
+            // let st = ScrollTrigger.create({
+            //     trigger: ".horizontal-scroll_section-height",
+            //     pin: true,
+            //     start: "top top",
+            //     end: "+=500",
+            //     scrub: 1
+            // });
+            // console.log(st.pin); // pin element (not selector text)
             tl.from([".title-6"], {
                 opacity: 0,
                 y: "+=50",
@@ -26,13 +33,13 @@ function Team({ comp }) {
                     scrub: 1
                 },
 
-            }).to('.horizontal-scroll_section-height', {
+            }).to('.team_section', {
                 scrollTrigger: {
                     trigger: ".horizontal-scroll_section-height",
-                    pin: true,
+                    pin: '.horizontal-scroll_section-height',
                     start: "top top", // when the top of the trigger hits the top of the viewport
                     end: "+=3500", // end after scrolling 500px beyond the start
-                    scrub: 1,
+                    scrub: 2,
                     markers: true
                 },
             }).from('.col-box', {

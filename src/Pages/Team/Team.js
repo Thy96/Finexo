@@ -33,16 +33,18 @@ function Team({ comp }) {
                     scrub: 1
                 },
 
-            }).to('.container-fluid', {
+            })
+            tl.to('.container-fluid', {
                 scrollTrigger: {
                     trigger: ".horizontal-scroll_section-height",
-                    pin: '.horizontal-scroll_section-height',
+                    pin: true,
                     start: "top top", // when the top of the trigger hits the top of the viewport
                     end: "+=3500", // end after scrolling 500px beyond the start
                     scrub: 2,
                     markers: true
                 },
-            }).from('.col-box', {
+            })
+            tl.from('.col-box', {
                 x: 1500,
                 opacity: 0,
                 ease: "circ.out",
@@ -51,20 +53,18 @@ function Team({ comp }) {
                     each: 1
                 },
                 scrollTrigger: {
-                    trigger: '.team_section',
+                    trigger: '.team_section1',
                     start: "top top",
                     end: "bottom bottom",
                     scrub: 1,
                 }
             })
-
-
         },
 
         { scope: comp }
     );
     return (
-        <section className="team_section layout_padding" ref={comp}>
+        <section className="team_section team_section1 layout_padding" ref={comp}>
             <div className='horizontal-scroll_section-height'>
                 <div className="container-fluid">
                     <div className="heading_container heading_center">
